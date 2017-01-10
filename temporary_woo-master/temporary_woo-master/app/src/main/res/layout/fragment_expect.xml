@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/layout_showingpage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="우리아이 예상키"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아빠키"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/editEcpect_dad"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:hint="아빠의 키를 입력하세요 (단위 cm)"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="엄마키"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/editExpect_mom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:singleLine="true"
+            android:hint="엄마의 키를 입력하세요 (단위 cm)"/>
+
+        <Button
+            android:id="@+id/btnExpect_calculation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#fd3270"
+            android:text="계산하기"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_hiddenpage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_showingpage"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="#FAEBD7">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="우리아이의 예상키는"
+            android:textSize="23dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/textExpect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="180cm 입니다."
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnExpect_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="뒤로"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_margin="15dp"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이름을 입력하세요"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/editRegister_name" />
+
+        <EditText
+            android:id="@+id/editRegister_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="이름"
+            android:singleLine="true"
+            android:inputType="textPersonName"
+            android:layout_below="@id/imageLogo" />
+
+        <TextView
+            android:id="@+id/textViewInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="생일을 입력하세요"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/editRegister_name" />
+
+        <DatePicker
+            android:id="@+id/datepicker"
+            android:startYear="2000"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:spinnersShown="true"/>
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_below="@id/datepicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_Male"
+                android:text="남자 아이"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/radio_Female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여자 아이" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRegister_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" 등록하기"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

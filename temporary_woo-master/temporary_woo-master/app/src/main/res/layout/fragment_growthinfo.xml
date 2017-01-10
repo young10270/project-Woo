@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutFourth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <TextView
+        android:id="@+id/textViewInfoMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="성장 정보"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnGrowthinfo_graph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="우리 아이 최근 측정 기록"
+        android:layout_below="@+id/textViewInfoMenu"/>
+
+    <Button
+        android:id="@+id/btnGrowthinfo_develop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnGrowthinfo_graph"
+        android:text="우리 아이 성장은 몇등?"
+        />
+
+    <Button
+        android:id="@+id/btnGrowthinfo_expect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnGrowthinfo_develop"
+        android:text="우리 아이 성장 예상키"
+        />
+
+    <Button
+        android:id="@+id/button_fragment_forth_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="뒤로"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

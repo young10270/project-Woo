@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+    android:id="@+id/linearLayoutSecond"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/Menu_Logo"
+            android:layout_margin="15dp"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="김이화 (여/만 4세)"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textViewMenu"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btnMenu_estimate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="측정하기"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btnMenu_growthInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="성장정보"
+            />
+
+
+</LinearLayout>
+</RelativeLayout>
